@@ -152,7 +152,7 @@ public class FireMazePlugin extends JavaPlugin implements Listener, CommandExecu
                 long interval = config.getLong("damage-interval", 2000);
 
                 long now = System.currentTimeMillis();
-                if (lastDamageTime.containsKey(player.getUniqueId()) && 
+                if (lastDamageTime.containsKey(player.getUniqueId()) &&
                     (now - lastDamageTime.get(player.getUniqueId())) < interval) {
                     return;
                 }
